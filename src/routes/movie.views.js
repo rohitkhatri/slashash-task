@@ -7,6 +7,7 @@ router.get(
     '/search',
     route({ routeName: 'movie.view.search' }),
     (_req, res, _next) => {
+        res.removeHeader('Content-Security-Policy');
         res.render('movies/search', {
             title: 'Movie Search',
             jsFile: 'search_movies.js'
@@ -18,6 +19,7 @@ router.get(
     '/favorites',
     route({ routeName: 'movie.view.favorites' }),
     (_req, res, _next) => {
+        res.removeHeader('Content-Security-Policy');
         res.render('movies/favorites', {
             title: 'Favorite Movies',
             jsFile: 'favorite_movies.js'

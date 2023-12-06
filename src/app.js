@@ -35,7 +35,7 @@ app.use(express.json({}));
 app.use(RequestTracer.middleware({ useHeader: true, headerName: 'reqid' }));
 
 if (process.env.NODE_ENV !== 'production') {
-    app.use(cors());
+    // app.use(cors());
 }
 
 // app.use(require('helmet')());

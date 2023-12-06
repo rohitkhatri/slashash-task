@@ -38,7 +38,7 @@ if (process.env.NODE_ENV !== 'production') {
     app.use(cors());
 }
 
-app.use(require('helmet')());
+// app.use(require('helmet')());
 
 // Views
 app.use('/', require('./routes/views'));

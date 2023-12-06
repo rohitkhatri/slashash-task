@@ -1,0 +1,33 @@
+<link href="/css/movie.css" rel="stylesheet">
+
+<div class="m-3">
+    <div class="input-group mb-3">
+        <input id="searchInput" type="text" class="form-control" placeholder="Enter movie title to search" aria-label="Movie title" aria-describedby="searchBtn">
+        <button id="searchBtn" class="btn btn-outline-secondary" type="button" disabled="true">
+            Search
+        </button>
+    </div>
+    <div id="movieListContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xl-5 g-3">
+        <div class="col">
+            <div class="movie-item card" data-id="123">
+                <img src="/images/twilight.jpg" height="300">
+                <div class="card-body">
+                    <h6 class="card-title">Twilight</h6>
+                    <div class="row">
+                        <div class="col-5">
+                            <span>2019</span>
+                        </div>
+                        <div class="col-5">
+                            <span>movie</span>
+                        </div>
+                        <div class="col-2 fav-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

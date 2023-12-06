@@ -1,0 +1,10 @@
+.movie-item>img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.movie-item .fav-btn {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
